@@ -1,7 +1,19 @@
-// global styling
+    // global styling
+
+// Fonts
+
+@font-face {
+    font-family: 'rotunda-light';
+    src: url(../fonts/Rotunda-Light.ttf);
+}
+
+@font-face {
+    font-family: 'rotunda-regular';
+    src: url(../fonts/Rotunda-Regular.ttf);
+}
 
 * {
-    font-family: 'silk-serif', sans-serif;
+    font-family: 'rotunda-regular', 'silk-serif', sans-serif;
     font-weight: normal;
     margin: 0; padding: 0;
     box-sizing: border-box;
@@ -201,6 +213,88 @@ $pink: #DED4C9;
 
     .display-none {
         opacity: 0;
+    }
+}
+
+// Media query
+
+@media (max-width: 1024px) {
+
+    // Nav styling
+
+    .nav {
+        .nav-bar {
+
+            .middle-container {
+                margin-right: 0;
+                margin-left: 5rem;
+            }
+
+            .left-container {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 599px) {
+
+    // Nav styling
+
+    .nav {
+        .nav-bar {
+
+            .middle-container {
+                margin-left: 2rem;
+
+                .img-container {
+                    width: 19rem;
+                }
+            }
+
+            .right-container {
+                margin-right: 2rem;
+
+                i {
+                    font-weight: normal;
+                    font-size: 6.4rem;
+                    height: fit-content;
+                }
+            }
+        }
+
+        .nav-animated {
+            .left-container {
+                width: 100%;
+        
+                .logo-container {
+                    margin-top: 9rem;
+                    width: 24rem;
+                }
+        
+                .links-container {
+    
+                    a {
+                        font-size: 1.6rem;
+                        line-height: 2.5;
+                    }
+                }
+        
+                .signet-container {
+                    width: 5rem;
+                    margin-bottom: 2rem;
+                }
+            }
+        
+            .right-container {
+                display: none;
+            }
+        }
+
+        .fa-xmark {
+            top: 25px;
+            right: 28px;
+        }
     }
 }
 

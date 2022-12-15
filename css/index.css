@@ -8,7 +8,7 @@
   justify-content: flex-end;
 }
 .banner .container .text-container {
-  margin-right: 30rem;
+  margin-right: 24rem;
 }
 .banner .container .text-container h2 {
   font-size: 5rem;
@@ -19,4 +19,16 @@
   font-size: 2rem;
   color: white;
   line-height: 1.2;
+}
+
+@media (max-width: 1499px) {
+  .banner .container .text-container {
+    margin-right: 12rem;
+  }
+  .banner .container .text-container h2 {
+    font-size: 4.2rem;
+  }
+  .banner .container .text-container p {
+    font-size: 1.8rem;
+  }
 }/*# sourceMappingURL=index.css.map */

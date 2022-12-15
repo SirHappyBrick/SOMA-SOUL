@@ -12,7 +12,7 @@
         justify-content: flex-end;
 
         .text-container {
-            margin-right: 30rem;
+            margin-right: 24rem;
 
             h2 {
                 font-size: 5rem;
@@ -27,4 +27,32 @@
             }
         }
     }
+}
+
+
+@media (max-width: 1499px) {
+    // Banner styling
+
+    .banner {
+        .container {  
+            .text-container {
+                margin-right: 12rem;
+    
+                h2 {
+                    font-size: 4.2rem;
+                }
+    
+                p {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+
+    // Nav styling
+
+    
 }

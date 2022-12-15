@@ -1,5 +1,13 @@
+@font-face {
+  font-family: "rotunda-light";
+  src: url(../fonts/Rotunda-Light.ttf);
+}
+@font-face {
+  font-family: "rotunda-regular";
+  src: url(../fonts/Rotunda-Regular.ttf);
+}
 * {
-  font-family: "silk-serif", sans-serif;
+  font-family: "rotunda-regular", "silk-serif", sans-serif;
   font-weight: normal;
   margin: 0;
   padding: 0;
@@ -156,4 +164,54 @@ html::-webkit-scrollbar-thumb {
 }
 .nav .display-none {
   opacity: 0;
+}
+
+@media (max-width: 1024px) {
+  .nav .nav-bar .middle-container {
+    margin-right: 0;
+    margin-left: 5rem;
+  }
+  .nav .nav-bar .left-container {
+    display: none;
+  }
+}
+@media (max-width: 599px) {
+  .nav .nav-bar .middle-container {
+    margin-left: 2rem;
+  }
+  .nav .nav-bar .middle-container .img-container {
+    width: 19rem;
+  }
+  .nav .nav-bar .right-container {
+    margin-right: 2rem;
+  }
+  .nav .nav-bar .right-container i {
+    font-weight: normal;
+    font-size: 6.4rem;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .nav .nav-animated .left-container {
+    width: 100%;
+  }
+  .nav .nav-animated .left-container .logo-container {
+    margin-top: 9rem;
+    width: 24rem;
+  }
+  .nav .nav-animated .left-container .links-container a {
+    font-size: 1.6rem;
+    line-height: 2.5;
+  }
+  .nav .nav-animated .left-container .signet-container {
+    width: 5rem;
+    margin-bottom: 2rem;
+  }
+  .nav .nav-animated .right-container {
+    display: none;
+  }
+  .nav .fa-xmark {
+    top: 25px;
+    right: 28px;
+  }
 }/*# sourceMappingURL=global.css.map */
