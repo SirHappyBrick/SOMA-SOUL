@@ -1,0 +1,22 @@
+.banner .container {
+  height: 84vh;
+  width: 100vw;
+  background-image: url(../images/index/baner_1.png);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.banner .container .text-container {
+  margin-right: 30rem;
+}
+.banner .container .text-container h2 {
+  font-size: 5rem;
+  color: white;
+}
+.banner .container .text-container p {
+  margin-top: 4rem;
+  font-size: 2rem;
+  color: white;
+  line-height: 1.2;
+}/*# sourceMappingURL=index.css.map */
