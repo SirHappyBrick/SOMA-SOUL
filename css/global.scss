@@ -12,6 +12,11 @@
     src: url(../fonts/Rotunda-Regular.ttf);
 }
 
+@font-face {
+    font-family: 'feliz';
+    src: url(../fonts/FontsFree-Net-hv-feliz-en-vista-regular-2.ttf);
+}
+
 * {
     font-family: 'rotunda-regular', 'silk-serif', sans-serif;
     font-weight: normal;
@@ -63,6 +68,15 @@ $pink: #DED4C9;
     color: $val;
     font-family: 'typold';
     text-align: justify;
+}
+
+@mixin button-regular {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid $black-paragraph 1px;
+    padding: 1.5rem 3rem;
+    border-radius: 50%;
 }
 
 // Nav Styling

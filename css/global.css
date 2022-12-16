@@ -6,6 +6,10 @@
   font-family: "rotunda-regular";
   src: url(../fonts/Rotunda-Regular.ttf);
 }
+@font-face {
+  font-family: "feliz";
+  src: url(../fonts/FontsFree-Net-hv-feliz-en-vista-regular-2.ttf);
+}
 * {
   font-family: "rotunda-regular", "silk-serif", sans-serif;
   font-weight: normal;
