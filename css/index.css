@@ -12,13 +12,13 @@
   margin-right: 24rem;
 }
 .banner .container .text-container h2 {
-  font-size: 5rem;
+  font-size: 6.4rem;
   color: white;
   font-family: "feliz";
 }
 .banner .container .text-container p {
   margin-top: 4rem;
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: white;
   line-height: 1.2;
   font-family: "rotunda";
@@ -219,6 +219,64 @@
   border-radius: 50%;
   cursor: pointer;
   margin-top: 8rem;
+}
+
+.instagram-section {
+  background-color: #F4F1EB;
+}
+.instagram-section h1 {
+  padding-top: 10rem;
+  font-family: "feliz";
+  font-size: 4rem;
+  text-align: center;
+}
+.instagram-section .imgs-container {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.instagram-section .imgs-container .img-desc-wrapper {
+  margin-top: 11rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.instagram-section .imgs-container .img-desc-wrapper .img-container {
+  width: 26vw;
+  height: 26vw;
+  position: relative;
+}
+.instagram-section .imgs-container .img-desc-wrapper .img-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.instagram-section .imgs-container .img-desc-wrapper .img-container .img2:hover {
+  opacity: 0;
+}
+.instagram-section .imgs-container .img-desc-wrapper p {
+  margin-top: 6rem;
+  font-family: "feliz";
+  font-size: 2.4rem;
+  text-align: center;
+}
+.instagram-section a .button-regular {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid rgb(47, 47, 47) 1px;
+  padding: 2rem 4rem;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: 10rem;
 }
 
 @media (max-width: 1499px) {
@@ -480,6 +538,7 @@
     margin: 0 auto;
   }
   .buy-voucher .header-section h2 {
+    font-size: 3.4rem;
     padding-top: 10rem;
   }
   .buy-voucher .header-section p {
@@ -523,5 +582,39 @@
     border-radius: 50%;
     cursor: pointer;
     margin-top: 8rem;
+  }
+  .instagram-section h1 {
+    padding-top: 10rem;
+    font-family: "feliz";
+    font-size: 3.2rem;
+    text-align: center;
+  }
+  .instagram-section .imgs-container {
+    margin-top: 6rem;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .instagram-section .imgs-container .img-desc-wrapper {
+    margin-top: 3rem;
+    flex-direction: column;
+  }
+  .instagram-section .imgs-container .img-desc-wrapper .img-container {
+    width: 100vw;
+    height: 50vh;
+  }
+  .instagram-section .imgs-container .img-desc-wrapper p {
+    margin-top: 6rem;
+    font-size: 2.4rem;
+  }
+  .instagram-section a .button-regular {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid rgb(47, 47, 47) 1px;
+    padding: 2rem 4rem;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: 5rem;
   }
 }/*# sourceMappingURL=index.css.map */
