@@ -115,7 +115,7 @@ $black-paragraph: rgb(47, 47, 47);
         }
 
         .middle-container {
-            margin-right: 12rem;
+            margin-right: 17rem;
 
             .img-container {
                 width: 30rem;
@@ -214,7 +214,7 @@ $black-paragraph: rgb(47, 47, 47);
 
     .display {
         opacity: 1;
-        z-index: 0;
+        z-index: 1;
     }
 
     .fa-xmark {
@@ -224,6 +224,7 @@ $black-paragraph: rgb(47, 47, 47);
         top: 60px; right: 60px;
         cursor: pointer;
         opacity: 0.8;
+        z-index: 2;
     }
 
     .display-none {
@@ -468,9 +469,10 @@ $black-paragraph: rgb(47, 47, 47);
             gap: 6rem;
 
             .left-container {
+                margin: 0 2.5rem;
                 p {
                     font-size: 1.5rem;
-                    width: 90%;
+                    width: auto;
                     line-height: 1.2;
                 }
 
