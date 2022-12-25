@@ -1,0 +1,160 @@
+// Colors 
+
+$background: #F4F1EB;
+$pink: #DED4C9;
+$black-paragraph: rgb(47, 47, 47);
+
+// Mixins
+
+@mixin button-regular {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid $black-paragraph 1px;
+    padding: 2rem 4rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+@mixin h1-styling {
+    font-family: 'feliz';
+    font-size: 4rem;
+    text-align: center;
+}
+
+// Price list
+
+.price-list {
+    background-color: $background;
+    padding-bottom: 10rem;
+
+    .price-list-container {
+        max-width: 75vw;
+        margin: 0 auto;
+
+        h1 {
+            @include h1-styling;
+            text-align: center;
+            font-family: 'feliz';
+            font-size: 6rem;
+            padding: 12rem 0 10rem;
+        }
+
+        .question {
+            margin-bottom: 4rem;
+            padding-bottom: 2rem;
+
+            .question-title {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                text-transform: capitalize;
+                padding-bottom: 1rem;
+    
+                h2 {
+                    @include h1-styling();
+                    font-family: 'feliz';
+                    cursor: pointer;
+                }
+    
+                .question-btn {
+                    font-size: 2rem;
+                    background: transparent;
+                    border-color: transparent;
+                    cursor: pointer;
+                    color: black;
+    
+                    .arrow {
+                        i {
+                            color: $black-paragraph;
+                        }
+                    }
+                }
+    
+                .rotate {
+                    transform: rotate(180deg);
+                }
+            }
+    
+            .question-text {
+                .category {
+                    margin-top: 8rem;
+                    margin-bottom: 4rem;
+                    display: flex;
+                    gap: 6rem;
+
+                    .one {
+                        max-width: 22.6rem;
+                        min-width: 22.6rem;
+
+                        a {
+                            font-family: 'rotunda-light';
+                            font-size: 2.2rem;
+                            color: $black-paragraph;
+                        }
+                    }
+
+                    .two {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        width: 100%;
+                        gap: 1.8rem;
+
+                        .p-container {
+                            display: flex;
+                            justify-content: space-between;
+
+                            p {
+                                font-size: 2rem;
+                                color: $black-paragraph;
+                                font-family: 'rotunda-light';
+                                min-width: 8rem;
+                            }
+
+                            .procedure {
+                                min-width: 40rem;
+                            }
+
+                            .package {
+                                margin-left: 24rem;
+                            }
+
+                            .price {
+                                margin-left: 16rem;
+                                font-family: 'rotunda-regular';
+                            }
+                        }
+
+                        .mobile-show {
+                            display: none;
+                        }
+                    }
+                }
+
+            }
+        }
+    
+        /* hide text */
+        
+        .question-text {
+            display: none;
+        }
+        .show-text .question-text {
+            display: block;
+        }
+        .minus-icon {
+            display: none;
+        }
+        .show-text .minus-icon {
+            display: inline;
+        }
+        .show-text .plus-icon {
+            display: none;
+        }
+    
+        .select-category {
+            margin: 20rem 0;
+        }
+    }
+}
